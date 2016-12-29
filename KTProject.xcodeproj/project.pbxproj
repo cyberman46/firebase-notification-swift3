@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AE9F5279A2B714E5347F196 /* Pods_KTProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3AB6AF7BDCC4855F4BC816 /* Pods_KTProject.framework */; };
 		9050017D1E11FE8C00CFC1FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050017C1E11FE8C00CFC1FD /* AppDelegate.swift */; };
 		9050017F1E11FE8C00CFC1FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050017E1E11FE8C00CFC1FD /* ViewController.swift */; };
 		905001821E11FE8C00CFC1FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905001801E11FE8C00CFC1FD /* Main.storyboard */; };
 		905001851E11FE8C00CFC1FD /* KTProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 905001831E11FE8C00CFC1FD /* KTProject.xcdatamodeld */; };
 		905001871E11FE8C00CFC1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 905001861E11FE8C00CFC1FD /* Assets.xcassets */; };
 		9050018A1E11FE8C00CFC1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905001881E11FE8C00CFC1FD /* LaunchScreen.storyboard */; };
+		905001931E1206FC00CFC1FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 905001921E1206FC00CFC1FD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C3AB6AF7BDCC4855F4BC816 /* Pods_KTProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		905001791E11FE8C00CFC1FD /* KTProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9050017C1E11FE8C00CFC1FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9050017E1E11FE8C00CFC1FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,10 @@
 		905001861E11FE8C00CFC1FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905001891E11FE8C00CFC1FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9050018B1E11FE8C00CFC1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905001911E12005E00CFC1FD /* KTProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KTProject.entitlements; sourceTree = "<group>"; };
+		905001921E1206FC00CFC1FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90DD59339FE87CBF5A55268E /* Pods-KTProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-KTProject/Pods-KTProject.release.xcconfig"; sourceTree = "<group>"; };
+		D6E7C02A8317ABB9841BDCD6 /* Pods-KTProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KTProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KTProject/Pods-KTProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE9F5279A2B714E5347F196 /* Pods_KTProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B73D394EAD4E1B357678041 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C3AB6AF7BDCC4855F4BC816 /* Pods_KTProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		905001701E11FE8B00CFC1FD = {
 			isa = PBXGroup;
 			children = (
 				9050017B1E11FE8C00CFC1FD /* KTProject */,
 				9050017A1E11FE8C00CFC1FD /* Products */,
+				D5AD128655312A1FC447F1F1 /* Pods */,
+				2B73D394EAD4E1B357678041 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,26 @@
 		9050017B1E11FE8C00CFC1FD /* KTProject */ = {
 			isa = PBXGroup;
 			children = (
+				905001911E12005E00CFC1FD /* KTProject.entitlements */,
 				9050017C1E11FE8C00CFC1FD /* AppDelegate.swift */,
 				9050017E1E11FE8C00CFC1FD /* ViewController.swift */,
 				905001801E11FE8C00CFC1FD /* Main.storyboard */,
 				905001861E11FE8C00CFC1FD /* Assets.xcassets */,
 				905001881E11FE8C00CFC1FD /* LaunchScreen.storyboard */,
+				905001921E1206FC00CFC1FD /* GoogleService-Info.plist */,
 				9050018B1E11FE8C00CFC1FD /* Info.plist */,
 				905001831E11FE8C00CFC1FD /* KTProject.xcdatamodeld */,
 			);
 			path = KTProject;
+			sourceTree = "<group>";
+		};
+		D5AD128655312A1FC447F1F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6E7C02A8317ABB9841BDCD6 /* Pods-KTProject.debug.xcconfig */,
+				90DD59339FE87CBF5A55268E /* Pods-KTProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9050018E1E11FE8C00CFC1FD /* Build configuration list for PBXNativeTarget "KTProject" */;
 			buildPhases = (
+				E7430AC424B2E5FB48425B71 /* [CP] Check Pods Manifest.lock */,
 				905001751E11FE8B00CFC1FD /* Sources */,
 				905001761E11FE8B00CFC1FD /* Frameworks */,
 				905001771E11FE8B00CFC1FD /* Resources */,
+				205F2D468EF78D941BEDCB6D /* [CP] Embed Pods Frameworks */,
+				5927E0F5C24A54CEE76803CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -101,6 +133,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 39VY9X6S8W;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -128,12 +165,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				9050018A1E11FE8C00CFC1FD /* LaunchScreen.storyboard in Resources */,
+				905001931E1206FC00CFC1FD /* GoogleService-Info.plist in Resources */,
 				905001871E11FE8C00CFC1FD /* Assets.xcassets in Resources */,
 				905001821E11FE8C00CFC1FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		205F2D468EF78D941BEDCB6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KTProject/Pods-KTProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5927E0F5C24A54CEE76803CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KTProject/Pods-KTProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7430AC424B2E5FB48425B71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		905001751E11FE8B00CFC1FD /* Sources */ = {
@@ -261,8 +347,10 @@
 		};
 		9050018F1E11FE8C00CFC1FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E7C02A8317ABB9841BDCD6 /* Pods-KTProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KTProject/KTProject.entitlements;
 				DEVELOPMENT_TEAM = 39VY9X6S8W;
 				INFOPLIST_FILE = KTProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,8 +362,10 @@
 		};
 		905001901E11FE8C00CFC1FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DD59339FE87CBF5A55268E /* Pods-KTProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KTProject/KTProject.entitlements;
 				DEVELOPMENT_TEAM = 39VY9X6S8W;
 				INFOPLIST_FILE = KTProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -304,6 +394,7 @@
 				905001901E11FE8C00CFC1FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

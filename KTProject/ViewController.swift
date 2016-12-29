@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
 
 class ViewController: UIViewController {
 
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func getToken(_ sender: Any) {
+        
+        //print("Clicked")
+        let token = FIRInstanceID.instanceID().token()
+        print("Token key is: \(token)")
+        
+    }
 
 }
 
